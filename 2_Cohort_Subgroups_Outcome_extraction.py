@@ -44,14 +44,7 @@ Definition of “Subgroup”
 # Specific prompt for this step can be shared upon request
 '''
 
-# Step 7: Additional queries (placeholders)
-query_outcomes_info4 = '''Custom queries for additional extraction (if needed).'''
-query_outcomes_info5 = '''Custom queries for adverse events extraction (if needed).'''
-query_outcomes_info6 = '''Custom queries for clinical study information extraction (if needed).'''
-query_outcomes_info7 = '''Custom queries for formatting and presentation (if needed).'''
-query_outcomes_info8 = '''Custom queries for separating values and ranges (if needed).'''
-
-# Step 8: Combine all the prompt parts into a single string for 2 dataframes - "Study information & Outcome information"
+# Step 7: Combine all the prompt parts into a single string for 2 dataframes - "Study information & Outcome information"
 max_retries = 10
 retry_delay = 5
 
