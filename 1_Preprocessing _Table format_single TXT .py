@@ -14,9 +14,8 @@ from openai.error import ServiceUnavailableError
 openai.api_key = "Your API key"
 
 # Step 3: Read the abstracts from the text file
-with open("/Users/doniabenachour/Documents/GPT-literatures_review/Full articles_906'23/bb2121_MM_Tables.txt", "r") as f:
-     #abstracts = f.read().split("[Indexed for MEDLINE]")[:-1]  # Split the file by "[Indexed for MEDLINE]" to get individual abstracts
-     abstracts = f.read().split("American Society of Clinical Oncology")[:-1] #Split the file by "American Society of Clinical Oncology" to get individual abstracts (ASCO) 
+with open("Your txt file", "r") as f:
+     abstracts = f.read().split("Your split criteria")[:-1]
 
 
 # Step 4: General instruction for the query
@@ -32,7 +31,7 @@ During this task, must include all data elements and values and DO NOT exclude a
 max_retries = 10
 retry_delay = 5
 
-output_folder = "/Users/doniabenachour/Documents/GPT-literatures_review/Full articles_906'23/Preprocess_Tables"
+output_folder = " "
 
 for i, abstract in enumerate(abstracts):
     # Extract the abstract text
