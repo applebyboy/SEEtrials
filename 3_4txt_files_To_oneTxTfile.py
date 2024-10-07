@@ -10,11 +10,11 @@ from openai.error import ServiceUnavailableError
 openai.api_key = "Your API key"
 
 # Step 3: Define the folder paths for the input text files and the output folder
-folder1_path = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASCO_165set/1/4"
-folder2_path = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASCO_165set/2/4"
-folder3_path = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASCO_165set/3/4"
-folder4_path = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASCO_165set/4/4"
-output_folder = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASCO_165set/C4"
+folder1_path = " "
+folder2_path = " "
+folder3_path = " "
+folder4_path = " "
+output_folder = " "
 
 # Step 4: General instruction for the query
 general_instruction = '''
@@ -33,7 +33,7 @@ query_outcomes_info1 = '''
 - Ensure that shared information across the files is retained and incorporate non-overlapping columns and their respective values from all four files.
 '''
 
-# Step 5: Loop through each text file in the folders
+# Step 6: Loop through each text file in the folders
 for filename in os.listdir(folder1_path):
     if filename.endswith(".txt"):
         # Step 6: Read the content from the text files in each folder
