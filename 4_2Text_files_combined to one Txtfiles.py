@@ -10,9 +10,9 @@ from openai.error import ServiceUnavailableError
 openai.api_key = "Your API key
 
 # Step 3: Define the folder paths for the input text files and the output folder
-folder1_path = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASH_33set_MM/1"
-folder2_path = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASH_33set_MM/2"
-output_folder = "/Users/doniabenachour/Documents/GPT-literatures_review/Best_CT_Outcomes_81723/ASH_33set_MM/All combined"
+folder1_path = " "
+folder2_path = " "
+output_folder = " "
 
 # Step 4: General instruction for the query
 general_instruction = '''
