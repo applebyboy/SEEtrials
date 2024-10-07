@@ -1,4 +1,4 @@
-#Preprocessing _Table format_single TXT file_81723
+#Preprocessing _Table format_single TXT file
 
 
 # Step 1: Import necessary libraries and modules
@@ -27,7 +27,7 @@ During this task, must include all data elements and values and DO NOT exclude a
 '''
 
 
-# Step 7: Combine all the prompt parts into a single string for 2 dataframes - "Study information & Outcome information"
+# Step 5: Combine all the prompt parts into a single string for 2 dataframes - "Study information & Outcome information"
 max_retries = 10
 retry_delay = 5
 
