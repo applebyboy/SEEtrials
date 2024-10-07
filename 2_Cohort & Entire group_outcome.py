@@ -40,13 +40,7 @@ Table 3: Clinical Findings of Entire Group
 # Specific prompt for this step can be shared upon request
 '''
 
-# Step 8: Additional queries (placeholders)
-query_outcomes_info4 = '''Custom queries for additional extraction (if needed).'''
-query_outcomes_info5 = '''Custom queries for adverse events extraction (if needed).'''
-query_outcomes_info6 = '''Custom queries for clinical study information extraction (if needed).'''
-query_outcomes_info7 = '''Custom queries for formatting and presentation (if needed).'''
-
-# Step 9: Combine all the prompt parts into a single string for 2 dataframes - "Study information & Outcome information"
+# Step 8: Combine all the prompt parts into a single string for 2 dataframes - "Study information & Outcome information"
 max_retries = 10
 retry_delay = 5
 
@@ -57,7 +51,7 @@ for i, abstract in enumerate(abstracts):
     abstract_text = abstract.split("\n", 1)[1].strip()
 
     # Step 4: General instruction for the query
-    prompt = general_instruction + '\n' + f"[Abstract Text]: {abstract_text}" + '\n' + query_study_info + '\n' + query_outcomes_info1 + '\n' + query_outcomes_info2 + '\n' + query_outcomes_info4 + '\n' + query_outcomes_info5 + '\n' + query_outcomes_info6 + '\n' + query_outcomes_info7
+    prompt = general_instruction + '\n' + f"[Abstract Text]: {abstract_text}" + '\n' + query_study_info + '\n' + query_outcomes_info1 + '\n' + query_outcomes_info2 
 
     for j in range(max_retries):
         try:
