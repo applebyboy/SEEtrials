@@ -35,12 +35,7 @@ Table 2: Clinical Findings
 '''
 
 query_outcomes_info2 = '''
-Table 4: Clinical Findings of Subgroups
-# Specific prompt for this step can be shared upon request
-'''
-
-query_outcomes_info3 = '''
-Definition of “Subgroup”
+Table 3: Clinical Findings of Subgroups
 # Specific prompt for this step can be shared upon request
 '''
 
@@ -60,13 +55,7 @@ for i, abstract in enumerate(abstracts):
         f"[Abstract Text]: {abstract_text}" + '\n' +
         query_study_info + '\n' +
         query_outcomes_info1 + '\n' +
-        query_outcomes_info2 + '\n' +
-        query_outcomes_info3 + '\n' +
-        query_outcomes_info4 + '\n' +
-        query_outcomes_info5 + '\n' +
-        query_outcomes_info6 + '\n' +
-        query_outcomes_info7 + '\n' +
-        query_outcomes_info8
+        query_outcomes_info2
     )
 
     for j in range(max_retries):
